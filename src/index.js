@@ -88,9 +88,8 @@ function newToy (){
         <h2>${toy.name}</h2>
         <img src=${toy.image} class="toy-avatar" />
         <p>Likes: ${toy.likes} </p>
-        <button class="like-btn">Like</button>
+        <button class="like-btn" data-bin=${toy.id}>Like</button>
         `
-   
         toyCollection.append(toyDiv)
       }   
 
