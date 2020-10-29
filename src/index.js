@@ -78,6 +78,26 @@ function newToy (){
 
       fetch('http://localhost:3000/toys', reqObj)
       .then(resp => resp.json())
+      .then(toy => renderToy(toy));
+
+      const renderToy = (toy) => {
+        const toyCollection = document.getElementById('toy-collection')
+        const toyDiv = document.createElement("div")
+        toyDiv.className = "card"
+        toyDiv.innerHTML = `
+        <h2>${toy.name}</h2>
+        <img src=${toy.image} class="toy-avatar" />
+        <p>Likes: ${toy.likes} </p>
+        <button class="like-btn">Like</button>
+        `
+     
+        
+        toyCollection.append(toyDiv)
+      }   
+
+
+
+
     });
 };
 
