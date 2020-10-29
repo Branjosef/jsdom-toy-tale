@@ -92,10 +92,6 @@ function newToy (){
         `
         toyCollection.append(toyDiv)
       }   
-
-
-
-
     });
 };
 
