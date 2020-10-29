@@ -90,8 +90,7 @@ function newToy (){
         <p>Likes: ${toy.likes} </p>
         <button class="like-btn">Like</button>
         `
-     
-        
+   
         toyCollection.append(toyDiv)
       }   
 
